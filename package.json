@@ -25,6 +25,7 @@
     "@commitlint/cz-commitlint": "^19.6.1",
     "@commitlint/prompt-cli": "^19.7.1",
     "@eslint/eslintrc": "^3",
+    "@feature-sliced/cli": "^1.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
