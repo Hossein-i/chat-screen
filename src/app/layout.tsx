@@ -1,3 +1,4 @@
+import { AppProvider } from "@/shared/providers";
 import "@/shared/styles";
 
 import type { Metadata } from "next";
@@ -20,7 +21,9 @@ const RootLayout: React.FC<RootLayoutProps> = (props) => {
 
   return (
     <html lang="en">
-      <body className={`${vazirmatn.className}`}>{children}</body>
+      <body className={`${vazirmatn.className}`}>
+        <AppProvider>{children}</AppProvider>
+      </body>
     </html>
   );
 };
