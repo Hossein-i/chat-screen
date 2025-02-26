@@ -1,6 +1,5 @@
 import { AppProvider } from "@/shared/providers";
 import "@/shared/styles";
-
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 
