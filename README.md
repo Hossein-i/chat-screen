@@ -37,11 +37,29 @@ A modern and responsive chat application built with **Next.js**, **Redux Toolkit
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Start the frontend**:
+3. **Set up the backend**:
+
+   - Navigate to the server directory:
+
+     ```bash
+     cd server
+     ```
+
+   - Install backend dependencies:
+
+     ```bash
+     npm install
+     ```
+
+4. **Start the frontend**:
+
+   - Navigate back to the root directory:
+
+     ```bash
+     cd ..
+     ```
 
    - Start the development server:
 
@@ -49,10 +67,8 @@ A modern and responsive chat application built with **Next.js**, **Redux Toolkit
      npm run dev
      ```
 
-4. **Open the application**:
+5. **Open the application**:
    - Visit `http://localhost:3000` in your browser.
-
----
 
 ## Usage
 
