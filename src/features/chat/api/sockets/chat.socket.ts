@@ -17,7 +17,11 @@ export class ChatSocket {
   }
 
   connect() {
-    this.socket = io("http://localhost:3001");
+    this.socket = io(
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3001"
+        : "https://chat-screen-server.hossein-i.ir",
+    );
 
     this.socket.on("connect", () => {
       this.callbacks.onConnect(this.socket?.id);
