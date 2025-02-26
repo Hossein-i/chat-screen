@@ -14,25 +14,6 @@ export interface ThemeSwitcherUIProps extends ButtonProps {}
 
 export const ThemeSwitcherUI: React.FC<ThemeSwitcherUIProps> = forwardRef(
   (props, ref) => {
-    const {
-      domRef,
-      //   children,
-      //   spinnerSize,
-      //   spinner = <Spinner color="current" size={spinnerSize} />,
-      //   spinnerPlacement,
-      //   startContent,
-      //   endContent,
-      //   isLoading,
-      disableRipple,
-      getButtonProps,
-      getRippleProps,
-    } = useButton({
-      ref,
-      ...props,
-      isIconOnly: true,
-    });
-    const { ripples, onClear } = getRippleProps();
-
     const [mounted, setMounted] = useState(false);
     const { theme, setTheme } = useTheme();
 
@@ -53,6 +34,26 @@ export const ThemeSwitcherUI: React.FC<ThemeSwitcherUIProps> = forwardRef(
           ? onDarkTheme
           : onSystemTheme;
 
+    const {
+      domRef,
+      //   children,
+      //   spinnerSize,
+      //   spinner = <Spinner color="current" size={spinnerSize} />,
+      //   spinnerPlacement,
+      //   startContent,
+      //   endContent,
+      //   isLoading,
+      disableRipple,
+      getButtonProps,
+      getRippleProps,
+    } = useButton({
+      ref,
+      ...props,
+      isIconOnly: true,
+      onPress: onSwitchTheme,
+    });
+    const { ripples, onClear } = getRippleProps();
+
     useEffect(() => {
       setMounted(true);
     }, []);
@@ -60,7 +61,7 @@ export const ThemeSwitcherUI: React.FC<ThemeSwitcherUIProps> = forwardRef(
     if (!mounted) return null;
 
     return (
-      <button ref={domRef} {...getButtonProps({ onClick: onSwitchTheme })}>
+      <button ref={domRef} {...getButtonProps()}>
         {/* {startContent} */}
         {/* {isLoading && spinnerPlacement === "start" && spinner} */}
         {/* {children} */}

@@ -1,6 +1,6 @@
 {
   "name": "chat-screen",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "type": "module",
   "license": "MIT",
@@ -9,8 +9,7 @@
     "dev:server": "node server",
     "dev:next": "next dev --turbopack",
     "build": "next build",
-    "start": "concurrently -r \"npm run dev:server\" \"npm run start:next\"",
-    "start:next": "next start",
+    "start": "next start",
     "lint": "next lint",
     "format": "prettier --write --ignore-unknown **/*",
     "prepare": "husky",
