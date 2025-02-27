@@ -96,8 +96,6 @@ A modern and responsive chat application built with **Next.js**, **Redux Toolkit
 
 ```
 chat-task/
-├─ .eslintrc
-├─ .gitignore
 ├─ .husky/
 │  ├─ commit-msg
 │  └─ pre-commit
@@ -181,6 +179,8 @@ chat-task/
 │           └─ index.ts
 ├─ types/
    └─ global.d.ts
+├─ .eslintrc
+├─ .gitignore
 ├─ .prettierignore
 ├─ .prettierrc
 ├─ .stylelintrc
@@ -225,5 +225,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you have any questions or feedback, feel free to reach out:
 
 - **Name**: Hossein-i
-- **Email**: sayhi@Hossein-i..ir
+- **Email**: sayhi@Hossein-i.ir
 - **GitHub**: [Hossein-i](https://github.com/Hossein-i)
